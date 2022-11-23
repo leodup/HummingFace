@@ -8,7 +8,8 @@
 - SnipFind: Instrument sounds classification of 5 sec audio file.
 - Spotify Popularity Prediction: PopuPred
 
-**2. Team members (2):** Léo Dupire and Mateus Aragão
+**2. Team members (2):** Léo Dupire and Mateus Aragão @aragaomateus
+
 
 **3. Goal/Objective:**
 
