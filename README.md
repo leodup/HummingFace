@@ -2,7 +2,7 @@
 
 **Project Proposal**
 
-**1. Project Title:** HummingFace: Melodic Packaging/Compactualization
+**1. Project Title:** HummingFace: Generating Sounds with Deep Learning 
 
 - Alternatives:
 - SnipFind: Instrument sounds classification of 5 sec audio file.
@@ -36,16 +36,14 @@ Turn a acapellas sound or lead vocal audio of a music into a synthesized piano m
 - If simplification is needed, we will narrow down the scope of the learning. We will focus on specific music genres (rock, techno, opera, etc.), allowing the model to perform better on a smaller task. This approach is more about depth rather than breadth.
 
 **6. Implementation details: hardware (type of compute GPU/TPU etc, cloud based, edge devices), software (framework, existing code to reuse), dataset.**
-
-AS OF NOW, WE ARE NOT SET WITH ALL IMPLEMENTATIONS DETAILS.
-
-- We will use the Google Collab GPU and extend to NYU HPC services or Google GCP as needed.
+- Google GCP, Vertex AI.
+- Google Collab Running on Local GPU
 - Inspired on existing projects with code such as MuseGAN:
     - [https://github.com/salu133445/musegan](https://github.com/salu133445/musegan)
 - Available dataset to use:
     - [https://salu133445.github.io/lakh-pianoroll-dataset/](https://salu133445.github.io/lakh-pianoroll-dataset/)
     - [https://magenta.tensorflow.org/datasets/nsynth](https://magenta.tensorflow.org/datasets/nsynth)
-    - NSynth: [https://paperswithcode.com/dataset/nsynth](https://paperswithcode.com/dataset/nsynth)
+    - **NSynth: [https://paperswithcode.com/dataset/nsynth](https://paperswithcode.com/dataset/nsynth)**
     - MuseData: [https://paperswithcode.com/dataset/musedata](https://paperswithcode.com/dataset/musedata)
     - Lakh MIDI Dataset: [https://paperswithcode.com/dataset/lakh-midi-dataset](https://paperswithcode.com/dataset/lakh-midi-dataset)
     - POP909: [https://paperswithcode.com/dataset/pop909](https://paperswithcode.com/dataset/pop909)
@@ -56,7 +54,7 @@ AS OF NOW, WE ARE NOT SET WITH ALL IMPLEMENTATIONS DETAILS.
 
 **7. Demo planned:**
 
-The demo will consist of inputting a short sample (1min< ) of music and the trained model will produce the equivalent melody of that sample as a synthesized piano melody of equal duration as the input. (We have a couple fallback ideas in the event of )
+
 
 **8. References (if any):**
 
@@ -68,15 +66,7 @@ The demo will consist of inputting a short sample (1min< ) of music and the trai
 - [https://ai.googleblog.com/2018/09/googles-next-generation-music.html](https://ai.googleblog.com/2018/09/googles-next-generation-music.html)
 - https://google-research.github.io/seanet/audiolm/examples/
 
-**Thoughts:**
-
-We can give the model some musical knowledge: i.e. tempo must remain constant throughout the song, different tracks must have the same tempo, etc. These are music “rules” that don’t necessarily have to be learned and will speed up the process for us.
-
-MAYBE: if generation seems too ambitious, we can have a model that evaluates music and determines what its rating would be on Spotify. Input the song, artist (from Database of artists / artist popularity), language of song, style (rap, rock, etc.), and the model will predict how many listens (popularity) it gets per month - AKA predict the success of a song. This way, we can likely use “all” songs on spotify as the main part of the training data + some metadata on the songs (artist, style/genre, etc.). OR it could just have to recognize what genre the song is (classification).
-
-Ambitious: We could have the user input lyrics and the model will sing it - probably a robotic voice but as a proof of concept using Amazon Polly. (may require AWS - will be covered in the course I think)
-
-Simplify song. Compactualize.
+- References 
 
 WaveNet
 
