@@ -1,14 +1,8 @@
-# HummingFace
-
-**Project Proposal**
+# Team HummingFace
 
 **1. Project Title:** HummingFace: Generating Sounds with Deep Learning 
 
-- Alternatives:
-- SnipFind: Instrument sounds classification of 5 sec audio file.
-- Spotify Popularity Prediction: PopuPred
-
-**2. Team members (2):** Léo Dupire and Mateus Aragão @aragaomateus
+**2. Team members:** Léo Dupire and Mateus Aragão @aragaomateus
 
 
 **3. Goal/Objective:**
@@ -17,10 +11,11 @@ Turn a acapellas sound or lead vocal audio of a music into a synthesized piano m
 
 **4. Challenges:**
 
-- Working with audio/MIDI data.
-- Working with generative models.
-- Analyzing spectrograms.
-- Ambitious learning expectations.
+- Dealing with audio data
+- Repurposing image generation models
+- Working with GANs & Deep AutoEncoders
+- Hardware constraints & training models in VMs.
+
 
 **5. Approach/Techniques:**
 
@@ -57,27 +52,21 @@ Turn a acapellas sound or lead vocal audio of a music into a synthesized piano m
 
 
 **8. References (if any):**
+    - Dataset Used: 
+     - **NSynth: [https://paperswithcode.com/dataset/nsynth](https://paperswithcode.com/dataset/nsynth)**
 
-- Sequential Decision-Making in Musical Intelligence.
-- Artificial Intelligence in Music, Sound, Art and Design. 11th International Conference, EvoMUSART 2022, Held as Part of EvoStar 2022, Madrid, Spain, April 20–22, 2022, Proceedings
-- MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment.[https://arxiv.org/pdf/1709.06298v2.pdf](https://arxiv.org/pdf/1709.06298v2.pdf)
-    - [https://github.com/salu133445/musegan](https://github.com/salu133445/musegan)
-    - https://salu133445.github.io/lakh-pianoroll-dataset/
-- [https://ai.googleblog.com/2018/09/googles-next-generation-music.html](https://ai.googleblog.com/2018/09/googles-next-generation-music.html)
-- https://google-research.github.io/seanet/audiolm/examples/
+    - Blog Posts:
+    - Deep AutoEncoder Tutorial In Pytorch
+    C-Gans Tutorial in Keras/Tensorflow
+    - Important Papers: 
+    Conditional Generative Adversarial Nets[Mirza el atl 2014]
+    Reducing the Dimensionality of Data with Neural Networks[Hinton et al 2006
 
-- References 
+    - Sequential Decision-Making in Musical Intelligence.
+    - Artificial Intelligence in Music, Sound, Art and Design. 11th International Conference, EvoMUSART 2022, Held as Part of EvoStar 2022, Madrid, Spain, April 20–22, 2022, Proceedings
+    - MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment.[https://arxiv.org/pdf/1709.06298v2.pdf](https://arxiv.org/pdf/1709.06298v2.pdf)
+        - [https://github.com/salu133445/musegan](https://github.com/salu133445/musegan)
+        - https://salu133445.github.io/lakh-pianoroll-dataset/
+    - [https://ai.googleblog.com/2018/09/googles-next-generation-music.html](https://ai.googleblog.com/2018/09/googles-next-generation-music.html)
+    - https://google-research.github.io/seanet/audiolm/examples/
 
-WaveNet
-
-Jukebox
-
-Use SMALL sample
-
-Compactualize samples - spectrograms (Short-time fourier transform)
-
-Generates spectrogram (not audio directly)
-
-Post-processing to audio (inverse short-time fourier transform)
-
-Dissimilarity matrix
