@@ -16,6 +16,7 @@ Turn a acapellas sound or lead vocal audio of a music into a synthesized piano m
 - Working with GANs & Deep AutoEncoders
 - Hardware constraints & training models in VMs.
 
+![alt text](download.png)
 
 **5. Approach/Techniques:**
 
@@ -37,17 +38,22 @@ Turn a acapellas sound or lead vocal audio of a music into a synthesized piano m
     - [https://github.com/salu133445/musegan](https://github.com/salu133445/musegan)
 - Available dataset to use:
     - [https://salu133445.github.io/lakh-pianoroll-dataset/](https://salu133445.github.io/lakh-pianoroll-dataset/)
-    - [https://magenta.tensorflow.org/datasets/nsynth](https://magenta.tensorflow.org/datasets/nsynth)
     - **NSynth: [https://paperswithcode.com/dataset/nsynth](https://paperswithcode.com/dataset/nsynth)**
     - MuseData: [https://paperswithcode.com/dataset/musedata](https://paperswithcode.com/dataset/musedata)
-    - Lakh MIDI Dataset: [https://paperswithcode.com/dataset/lakh-midi-dataset](https://paperswithcode.com/dataset/lakh-midi-dataset)
-    - POP909: [https://paperswithcode.com/dataset/pop909](https://paperswithcode.com/dataset/pop909)
-    - VGMIDI: [https://paperswithcode.com/dataset/vgmidi](https://paperswithcode.com/dataset/vgmidi)
-    - Groove MIDI Dataset: [https://paperswithcode.com/dataset/groove-midi-dataset](https://paperswithcode.com/dataset/groove-midi-dataset)
-    - Multi-instrument dataset [https://zenodo.org/record/1432913#.Y2CBzi8r2gS](https://zenodo.org/record/1432913#.Y2CBzi8r2gS)
-    - https://magenta.tensorflow.org/datasets/maestro
 
-**7. Demo planned:**
+
+**7. Demos:**
+
+- Autoencoder with 64 Latent Space, trained in 2 epochs.
+    - Top image is Real spectogram
+    - Bottom image is Generated spectogram
+![alt text](64L_2epochs.png)
+
+-  Autoencoder 120 Latent Space,trained in 20 epochs.
+    - Top image is Real spectogram
+    - Bottom image is Generated spectogram
+![alt text](120L20epochs.png)
+
 
 
 
